@@ -1,0 +1,119 @@
+/*reset*/
+li{
+	list-style: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/*main*/
+body{
+	background: #Fdc;
+	position: relative;
+}
+#title{		
+	font-family: "宋体";/*"冬青简黑"*/
+	font-size: 36px;
+	font-weight: 700;
+	color: #f87;
+	text-shadow: 1px 2px 1px #fee;
+	text-align: center;
+	margin-top: 50px;	
+}
+#container{
+	width: 1290px;
+	margin: 0 auto;
+}
+
+$width:250px;
+.clr-box{
+	width: $width;
+	height: 310px;
+	background: #fff;
+	border: 1px solid #ddd;	
+	margin: 80px 35px 0;
+	float: left;
+	overflow: auto;
+	position: relative;
+}
+
+/*配置颜色*/ 
+$bgc1:#FFEfD0,#FFd2c5,#FF8877;
+$bgc2:#FAB0A9,#C4473D,#4D1919;
+$bgc3:#D0B8B4,#826360,#8A2E33;
+$bgc4:#dddddd,#FF8B3D,#020202;
+$bgc5:#E2DDD4,#A49479,#3E3C3D;
+$bgc6:#FFFDEF,#DEE9CC,#949C97;
+$bgc7:#E3EFD1,#BED2B6,#A9B08F;
+$bgc8:#F0FAF1,#B7ECD8,#70CFAF;
+$bgc9:#E9F1F3,#D1DCCE,#697E2F;
+$bgc10:#FFFADD,#313236,#101115;
+$bgc11:#B7ECD8,#70CFAF,#50B0A0;
+$bgc12:#D0EEE6,#AAD3D5,#1F556D;//#F2F2F2,#309EA0,#283444
+
+$bgc:$bgc1,$bgc2,$bgc3,$bgc4,$bgc5,$bgc6,$bgc7,$bgc8,$bgc9,$bgc10,$bgc11,$bgc12;
+$cwidth:230px;
+
+@mixin bgc($value){	
+	background:$value;		
+}
+ul.colors{
+	width: $cwidth;
+	height: 250px;
+	margin: 10px;
+	border-radius: 10px;
+	@for $i from 1 through 3{
+		.color-#{$i}{
+			width: $cwidth;
+			height: 60px + 10*$i;
+			overflow: hidden;	
+			@if $i==1{
+				border-radius:10px 10px 0 0;
+			}
+			@if $i==3{
+				border-radius: 0 0 10px 10px;
+			}
+		}
+	}	
+}
+
+@for $m from 1 through 12{
+	.item-#{$m}{
+		@for $n from 1 through 3{
+			.color-#{$n}{
+				@include bgc(nth(nth($bgc, $m),$n));
+			}
+		}		
+	}
+}
+
+.like{
+	width:$width;
+	height:50px;
+	line-height: 50px;
+	border-top: 1px solid #ddd;	
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	overflow:hidden;
+	.icon{
+		line-height: 50px;
+		margin: 0 10px;
+		position: relative;	
+		top: 7px;
+	}
+	.count{
+		font-size: 14px;
+		color: #999;		
+	}
+}
+
+
+
+
+
+
+
+
+
+
