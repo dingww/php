@@ -77,60 +77,60 @@ ul.colors {
     border-radius: 0 0 10px 10px; }
 
 .item-1 .color-1 {
-  background-color: #ffefd0; }
-.item-1 .color-2 {
-  background-color: #ffd2c5; }
-.item-1 .color-3 {
-  background-color: #ff8877; }
-
-.item-2 .color-1 {
-  background-color: #fab0a9; }
-.item-2 .color-2 {
-  background-color: #ef766d; }
-.item-2 .color-3 {
-  background-color: #4d1919; }
-
-.item-3 .color-1 {
-  background-color: #dddddd; }
-.item-3 .color-2 {
-  background-color: #ff8b3d; }
-.item-3 .color-3 {
-  background-color: #020202; }
-
-.item-4 .color-1 {
-  background-color: #e2ddd4; }
-.item-4 .color-2 {
-  background-color: #a49479; }
-.item-4 .color-3 {
-  background-color: #3e3c3d; }
-
-.item-5 .color-1 {
   background-color: #fffadd; }
-.item-5 .color-2 {
+.item-1 .color-2 {
   background-color: #313236; }
-.item-5 .color-3 {
+.item-1 .color-3 {
   background-color: #101115; }
 
-.item-6 .color-1 {
+.item-2 .color-1 {
   background-color: #e9f1f3; }
-.item-6 .color-2 {
+.item-2 .color-2 {
   background-color: #d1dcce; }
-.item-6 .color-3 {
+.item-2 .color-3 {
   background-color: #697e2f; }
 
-.item-7 .color-1 {
+.item-3 .color-1 {
   background-color: #fffdef; }
-.item-7 .color-2 {
+.item-3 .color-2 {
   background-color: #dee9cc; }
-.item-7 .color-3 {
+.item-3 .color-3 {
   background-color: #949c97; }
 
-.item-8 .color-1 {
+.item-4 .color-1 {
   background-color: #e3efd1; }
-.item-8 .color-2 {
+.item-4 .color-2 {
   background-color: #bed2b6; }
-.item-8 .color-3 {
+.item-4 .color-3 {
   background-color: #a9b08f; }
+
+.item-5 .color-1 {
+  background-color: #ffefd0; }
+.item-5 .color-2 {
+  background-color: #ffd2c5; }
+.item-5 .color-3 {
+  background-color: #ff8877; }
+
+.item-6 .color-1 {
+  background-color: #fab0a9; }
+.item-6 .color-2 {
+  background-color: #ef766d; }
+.item-6 .color-3 {
+  background-color: #4d1919; }
+
+.item-7 .color-1 {
+  background-color: #dddddd; }
+.item-7 .color-2 {
+  background-color: #ff8b3d; }
+.item-7 .color-3 {
+  background-color: #020202; }
+
+.item-8 .color-1 {
+  background-color: #e2ddd4; }
+.item-8 .color-2 {
+  background-color: #a49479; }
+.item-8 .color-3 {
+  background-color: #3e3c3d; }
 
 .item-9 .color-1 {
   background-color: #f0faf1; }
