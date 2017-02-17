@@ -7,143 +7,17 @@
 </head>
 <body>	
 	<div id="title">Dellaの配色板</div>
-	<div id="container">
-		<ul>
-			<li class="clr-box">
-				<ul class="colors item-1">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-2">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-3">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-4">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-5">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-6">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-7">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-8">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-9">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-10">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-11">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-			<li class="clr-box">
-				<ul class="colors item-12">
-					<li class="color-1"></li>
-					<li class="color-2"></li>
-					<li class="color-3"></li>
-				</ul>
-				<div class="like">
-					<span class="icon"><img src="images/love.png"></span>
-					<span class="count">0</span>
-				</div>
-			</li>
-		</ul>
-	</div>
+	<!-- <div id="container"></div> -->
 </body>
 </html>
 <script type="text/javascript" src="../jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var config = {
+			id:"container"
+		};
+
+		$().colorBoard(config);
+	})
+</script>

@@ -1,4 +1,33 @@
-$(function() {
+$.fn.colorBoard = function(_config) {
+	//创建节点
+	var $div = $('<div/>', {
+		'id': _config.id
+	});
+	$div.appendTo('body');
+
+	var len0 = 12;
+	var len1 = 3;
+	var item = '<ul>';
+	for (var i = 0; i < len0; i++) {
+		item += '<li class="clr-box"><ul class="colors item-' + (i + 1) + '">';
+		for (var j = 0; j < len1; j++) {
+			item += '<li class="color-' + (j + 1) + '"></li>';
+		}
+		item += '</ul><div class="like"><span class="icon"><img src="images/love.png"></span><span class="count">0</span></div></li>';
+	}
+	item += '</ul>';
+	$div.append(item);
+
+	$('.clr-box').mouseover(function(event) {
+		$(this).addClass('clr-hover');
+	});
+	$('.clr-box').mouseout(function(event) {
+		$(this).removeClass('clr-hover');
+	});
+
+
+
+	//鼠标滑过显示色值
 	$(".colors li").mouseover(function(event) {
 		var _this = $(this);
 		var bgc = getBackgroundColor(_this, 'background-color');
@@ -75,4 +104,5 @@ $(function() {
 	function hex(x) {
 		return ("0" + parseInt(x).toString(16)).slice(-2);
 	}
-});
+
+}
