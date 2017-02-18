@@ -5,17 +5,19 @@ $.fn.colorBoard = function(_config) {
 	});
 	$div.appendTo('body');
 
-	var len0 = 12;
-	var len1 = 3;
-	var item = '<ul>';
-	for (var i = 0; i < len0; i++) {
-		item += '<li class="clr-box"><ul class="colors item-' + (i + 1) + '">';
-		for (var j = 0; j < len1; j++) {
-			item += '<li class="color-' + (j + 1) + '"></li>';
+	var item = '';
+	for (var n = 0; n < _config.class.length; n++) {
+		item += '<ul class="' + _config.class[n] + '">';
+		for (var i = 0; i < _config.len0[n]; i++) {
+			item += '<li class="clr-box"><ul class="colors item-' + (i + 1) + '">';
+			for (var j = 0; j < _config.len1[n]; j++) {
+				item += '<li class="color-' + (j + 1) + '"></li>';
+			}
+			item += '</ul><div class="like"><span class="icon"><img src="images/love.png"></span><span class="count">0</span></div></li>';
 		}
-		item += '</ul><div class="like"><span class="icon"><img src="images/love.png"></span><span class="count">0</span></div></li>';
+		item += '</ul>';
 	}
-	item += '</ul>';
+
 	$div.append(item);
 
 	$('.clr-box').mouseover(function(event) {
@@ -24,8 +26,6 @@ $.fn.colorBoard = function(_config) {
 	$('.clr-box').mouseout(function(event) {
 		$(this).removeClass('clr-hover');
 	});
-
-
 
 	//鼠标滑过显示色值
 	$(".colors li").mouseover(function(event) {
